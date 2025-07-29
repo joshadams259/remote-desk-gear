@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Remote Desk Gear - Home Office Essentials</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background-color: #005f99;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1.5px;
+    }
+    nav a {
+      margin-left: 20px;
+      font-weight: 600;
+    }
+    main {
+      flex-grow: 1;
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .hero {
+      background: #e0f0ff;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #004a7c;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #004a7c;
+    }
+    .categories {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    .category-card {
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .category-card:hover {
+      transform: translateY(-5px);
+    }
+    .category-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .category-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #005f99;
+    }
+    .products {
+      max-width: 900px;
+      margin: 0 auto 60px auto;
+    }
+    .product {
+      background: white;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .product img {
+      width: 120px;
+      height: auto;
+      border-radius: 6px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+    .product-details {
+      flex-grow: 1;
+    }
+    .product-details h4 {
+      margin-bottom: 8px;
+      color: #004a7c;
+    }
+    .product-details p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    footer {
+      background-color: #005f99;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #cce4ff;
+      margin: 0 10px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Remote Desk Gear</h1>
+    <nav>
+      <a href="#categories">Categories</a>
+      <a href="#products">Top Picks</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Your Ultimate Home Office Essentials Guide</h2>
+      <p>Discover ergonomic chairs, desk organizers, LED lamps, and productivity tools for your remote workspace.</p>
+    </section>
+
+    <section id="categories" class="categories">
+      <article class="category-card">
+        <img src="https://images.unsplash.com/photo-1584680312609-6fa5e8e1f2f4?auto=format&fit=crop&w=400&q=60" alt="Ergonomic Chairs" />
+        <h3>Ergonomic Chairs</h3>
+        <p>Comfortable seating to keep your back happy all day long.</p>
+      </article>
+      <article class="category-card">
+        <img src="https://images.unsplash.com/photo-1555529669-91f3f1ed462b?auto=format&fit=crop&w=400&q=60" alt="Desk Organizers" />
+        <h3>Desk Organizers</h3>
+        <p>Keep your workspace tidy and efficient with smart organizers.</p>
+      </article>
+      <article class="category-card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=60" alt="LED Lamps" />
+        <h3>LED Lamps</h3>
+        <p>Brighten your desk with adjustable, eye-friendly lighting.</p>
+      </article>
+    </section>
+
+    <section id="products" class="products">
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1616627899641-441b5b8a4c60?auto=format&fit=crop&w=200&q=60" alt="Ergonomic Chair Review" />
+        <div class="product-details">
+          <h4>Top Ergonomic Chair 2025</h4>
+          <p>Discover why this chair offers the best lumbar support for remote workers. Comfortable, adjustable, and stylish.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Read full review</a>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1527434003381-6178f22a573b?auto=format&fit=crop&w=200&q=60" alt="Desk Organizer Review" />
+        <div class="product-details">
+          <h4>Best Desk Organizer for Clutter-Free Workspace</h4>
+          <p>Keep your essentials in reach and your desk clutter-free with this versatile organizer.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Read full review</a>
+        </div>
+      </article>
+      <article class="product">
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=200&q=60" alt="LED Lamp Review" />
+        <div class="product-details">
+          <h4>Adjustable LED Desk Lamp</h4>
+          <p>Bright, energy-efficient, and eye-friendly lighting that adapts to your work style.</p>
+          <a href="#" target="_blank" rel="noopener noreferrer">Read full review</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>© 2025 Remote Desk Gear. Connect with us:</p>
+    <p>
+      <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a> |
+      <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a> |
+      <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>
